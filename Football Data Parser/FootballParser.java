@@ -475,6 +475,7 @@ public class FootballParser {
     lengthtwo = length-4;
     String[] links = new String[lengthtwo];
     
+    // If the team is not in the playoffs, that game doesn't exist.
     if (length < 20) {
         lengthtwo = length-3;
         links = new String[lengthtwo];
@@ -488,7 +489,7 @@ public class FootballParser {
     while (i < lengthtwo) {
         String check = break1[j];
         
-        if (check.length() > 90) {
+        if (check.length() > 94) {
             links[i] = check.substring(78,105);
             i++;
         }

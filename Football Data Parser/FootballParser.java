@@ -168,7 +168,7 @@ public class FootballParser {
           String[] break1 = f.split("</style>\\\\");
     
           // Splits the bottom off
-          break1 = break1[1].split("</table>\\\\");
+          break1 = break1[1].split("</table>");
           
           // Splits it into single rows
           break1 = break1[0].split("</tr>");

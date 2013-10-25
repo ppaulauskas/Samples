@@ -83,7 +83,7 @@ public class FootballParser {
           out.print(row[1].substring(17,a));
       out.print(",");
       
-      // Finds the quarter length
+      // Finds the down
       a = row[2].length();
       if (a > 17)
           out.print(row[2].substring(17,a));
@@ -97,8 +97,8 @@ public class FootballParser {
       
       // Finds the possession
       a = row[4].length();
-      if (a > 25)
-          out.print(row[4].substring(25,a));
+      if (a > 13)
+          out.print(row[4].substring(13,a));
       out.print(",");
       
       // Parses the play
@@ -152,7 +152,6 @@ public class FootballParser {
           temp = temp.concat(links[i]);
           temp = temp.concat("&div=div_pbp_data");
           fixed[i] = temp;
-          StdOut.println(fixed[i]);
       }
       
       // Starts parsing the data
@@ -190,8 +189,8 @@ public class FootballParser {
                   int plength = break2[4].length();
                   
                   // Checks that there was a possession assigned
-                  if (plength > 25) {
-                      String pplay = break2[4].substring(25,28);
+                  if (plength > 13) {
+                      String pplay = break2[4].substring(13,15);
                       
                       // Assigns possession
                       if (pplay.equals(teamorig)) {

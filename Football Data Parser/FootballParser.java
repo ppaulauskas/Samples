@@ -350,9 +350,8 @@ public class FootballParser {
           // Goes through the single row array and pulls just the links of the games
           while (g < lengthtwo) {
               String check = break1[j];
-              
-              if (check.length() > 90) {
-                  teams.put(check.substring(78,105), check.substring(78,105));
+              if (check.length() > 96) {
+                  teams.put(check.substring(76,103), check.substring(76,103));
                   g++;
               }
               
@@ -373,6 +372,7 @@ public class FootballParser {
       for (Enumeration e = teams.elements(); e.hasMoreElements(); ) {
           links[cur] = (String) e.nextElement();
           cur++;
+          StdOut.println(links[cur]);
       }
       
       // Sends off the links to be decoded

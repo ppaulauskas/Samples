@@ -85,14 +85,14 @@ public class FootballParser {
       
       // Finds the quarter length
       a = row[2].length();
-      if (a > 19)
-          out.print(row[2].substring(19,a));
+      if (a > 17)
+          out.print(row[2].substring(17,a));
       out.print(",");
       
       // Finds the ToGo length
       a = row[3].length();
-      if (a > 19)
-          out.print(row[3].substring(19,a));
+      if (a > 17)
+          out.print(row[3].substring(17,a));
       out.print(",");
       
       // Finds the possession

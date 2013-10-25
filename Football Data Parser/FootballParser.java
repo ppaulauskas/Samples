@@ -490,7 +490,7 @@ public class FootballParser {
         String check = break1[j];
         
         if (check.length() > 94) {
-            links[i] = check.substring(78,105);
+            links[i] = check.substring(76,103);
             i++;
         }
         

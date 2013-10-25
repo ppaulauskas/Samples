@@ -108,26 +108,26 @@ public class FootballParser {
       
       // Finds the current score for first team
       a = row[6].length();
-      if (a > 17)
-          out.print(row[6].substring(17,a));
+      if (a > 4)
+          out.print(row[6].substring(4,a));
       out.print(",");
       
       // Finds the current score for the second team
       a = row[7].length();
-      if (a > 17)
-          out.print(row[7].substring(17,a));
+      if (a > 4)
+          out.print(row[7].substring(4,a));
       out.print(",");
       
       // Finds the EPB
       a = row[8].length();
-      if (a > 17)
-          out.print(row[8].substring(17,a));
+      if (a > 4)
+          out.print(row[8].substring(4,a));
       out.print(",");
       
       // Finds the EPA
       a = row[9].length();
-      if (a > 17)
-          out.print(row[9].substring(17,a));
+      if (a > 4)
+          out.print(row[9].substring(4,a));
       out.print(",");
       
       // Outputs the possession

@@ -36,6 +36,8 @@ public class FootballParser {
   static int week = -1;
   
   // A method that parses a play
+  // Currently removes all the html and hyperlinks
+  // Does not recognize plays.
   public static String playparse(String play) {
       // Splits the string
       String[] arr = play.split(">");

@@ -79,8 +79,8 @@ public class FootballParser {
       
       // Finds time length
       a = row[1].length();
-      if (a > 19)
-          out.print(row[1].substring(19,a));
+      if (a > 17)
+          out.print(row[1].substring(17,a));
       out.print(",");
       
       // Finds the quarter length
@@ -152,6 +152,7 @@ public class FootballParser {
           temp = temp.concat(links[i]);
           temp = temp.concat("&div=div_pbp_data");
           fixed[i] = temp;
+          StdOut.println(fixed[i]);
       }
       
       // Starts parsing the data

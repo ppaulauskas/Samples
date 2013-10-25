@@ -327,7 +327,7 @@ public class FootballParser {
           String[] break1 = f.split("</style>\\\\");
           
           // Splits the bottom off
-          break1 = break1[1].split("</table>\\\\");
+          break1 = break1[1].split("</table>");
           
           // Splits it into single rows
           break1 = break1[0].split("</tr>");
@@ -463,7 +463,7 @@ public class FootballParser {
     String[] break1 = f.split("</style>\\\\");
     
     // Splits the bottom off
-    break1 = break1[1].split("</table>\\\\");
+    break1 = break1[1].split("</table>");
     
     // Splits it into single rows
     break1 = break1[0].split("</tr>");
@@ -492,7 +492,9 @@ public class FootballParser {
         String check = break1[j];
         
         if (check.length() > 94) {
+            StdOut.println(check);
             links[i] = check.substring(76,103);
+            StdOut.println(links[i]);
             i++;
         }
         

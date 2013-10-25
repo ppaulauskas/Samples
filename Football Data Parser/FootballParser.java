@@ -315,7 +315,7 @@ public class FootballParser {
           webbase = webbase.concat(curteam);
           webbase = webbase.concat("/");
           webbase = webbase.concat(year);
-          webbase = webbase.concat(".htm&div=div_team_gamelogs&del_col=1,2,3,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24"); 
+          webbase = webbase.concat(".htm&div=div_team_gamelogs&del_col=1,2,3,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21"); 
           
           // Creates a new input stream from assembled website
           In in = new In(webbase);
@@ -451,7 +451,7 @@ public class FootballParser {
     webbase = webbase.concat(team);
     webbase = webbase.concat("/");
     webbase = webbase.concat(year);
-    webbase = webbase.concat(".htm&div=div_team_gamelogs&del_col=1,2,3,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24");
+    webbase = webbase.concat(".htm&div=div_team_gamelogs&del_col=1,2,3,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21");
         
     // Creates a new input stream from assembled website
     In in = new In(webbase);

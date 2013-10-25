@@ -371,7 +371,6 @@ public class FootballParser {
       // Gets an enumeration of all the keys and puts then into a string array
       for (Enumeration e = teams.elements(); e.hasMoreElements(); ) {
           links[cur] = (String) e.nextElement();
-          StdOut.println(links[cur]);
           cur++;
       }
       
@@ -492,9 +491,7 @@ public class FootballParser {
         String check = break1[j];
         
         if (check.length() > 94) {
-            StdOut.println(check);
             links[i] = check.substring(76,103);
-            StdOut.println(links[i]);
             i++;
         }
         

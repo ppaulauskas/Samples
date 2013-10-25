@@ -36,6 +36,8 @@ public class FootballParser {
   static int week = -1;
   
   // A method that parses a play
+  // Currently removes all the html and hyperlinks
+  // Does not recognize plays.
   public static String playparse(String play) {
       // Splits the string
       String[] arr = play.split(">");
@@ -348,9 +350,8 @@ public class FootballParser {
           // Goes through the single row array and pulls just the links of the games
           while (g < lengthtwo) {
               String check = break1[j];
-              
-              if (check.length() > 90) {
-                  teams.put(check.substring(78,105), check.substring(78,105));
+              if (check.length() > 96) {
+                  teams.put(check.substring(76,103), check.substring(76,103));
                   g++;
               }
               
@@ -370,6 +371,7 @@ public class FootballParser {
       // Gets an enumeration of all the keys and puts then into a string array
       for (Enumeration e = teams.elements(); e.hasMoreElements(); ) {
           links[cur] = (String) e.nextElement();
+          StdOut.println(links[cur]);
           cur++;
       }
       
